@@ -1,24 +1,12 @@
-<style>
-.fase-header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0;
-  padding: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
-  font-size: 25px;
-}
-</style>
-
 # Plan de trabajo - Ecommerce Template IA
 
-<div class="fase-header">Objetivo</div>
+# Objetivo
 
 Construir un template de e-commerce modular y reutilizable, desarrollado con ayuda de agentes de IA y modelos open source.
 
 ---
 
-<div class="fase-header">FASE 0: Definición</div>
+# FASE 0: Definición
 
 ### 0.1. Definir alcance del MVP
 
@@ -229,8 +217,7 @@ Queda fuera del MVP:
 
 ---
 
-
-<div class="fase-header">FASE 1: Arquitectura</div>
+# FASE 1: Arquitectura
 
 ### 1.1. Estructura de carpetas:
 
@@ -536,7 +523,7 @@ Cada archivo es un tema.
 
   ---
 
-<div class="fase-header">FASE 2: Configuración IA</div>
+# FASE 2: Configuración IA
 
 - Crear prompts para:
   - Arquitecto
@@ -546,14 +533,14 @@ Cada archivo es un tema.
   - Documentación
 - Configurar flujo entre agentes.
 
-<div class="fase-header">FASE 3: Diseño UI</div>
+# FASE 3: Diseño UI
 
 - Sistema de diseño.
 - Componentes base.
 - Layouts.
 - Responsive.
 
-<div class="fase-header">FASE 4: Funcionalidades MVP</div>
+# FASE 4: Funcionalidades MVP
 
 - Inicio
 - Catálogo
@@ -565,26 +552,26 @@ Cada archivo es un tema.
 - Perfil
 - Panel básico
 
-## Fase 5. Backend
+# FASE 5: Backend
 - API
 - Base de datos
 - Autenticación
 - Pedidos
 - Inventario
 
-## Fase 6. Calidad
+# FASE 6: Calidad
 - Tests
 - Lint
 - Documentación
 - Optimización
 
-## Fase 7. Template
+# FASE 7: Template
 - Temas
 - Configuración
 - Datos de ejemplo
 - Scripts de personalización
 
-## Fase 8. Adaptación a clientes
+# FASE 8: Adaptación a clientes
 - Branding
 - Productos
 - Integraciones

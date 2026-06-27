@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# pnpm
+pnpm-lock.yaml
+
+# builds
+dist/
+build/
+.out/
+.output/
+
+# logs
+*.log
+
+# env files
+.env
+.env.*
+
+# astro
+apps/web/.astro/

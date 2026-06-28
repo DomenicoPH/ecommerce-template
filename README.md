@@ -144,3 +144,11 @@ Sistema de temas configurable sin tocar lógica de negocio:
 6. Themes
 7. IA agents
 8. Clientes
+
+---
+
+## Comandos Dev Monorepo
+
+    pnpm --filter web dev
+
+Ejecuta el servidor de desarrollo del frontend (workspace web) en un monorepo.

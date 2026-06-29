@@ -1,5 +1,5 @@
 ---
-import { Button } from "@ecommerce/ui";
+import { Button, ProductCard } from "@ecommerce/ui";
 import "../styles/global.css";
 ---
 
@@ -13,7 +13,7 @@ import "../styles/global.css";
 		<title>Astro</title>
 	</head>
 	<body class="p-8">
-		<h1 class="text-2xl font-bold mb-6">Tailwind + Button UI</h1>
+		<h1 class="text-2xl font-bold mb-6">Ecommerce Template</h1>
 		<div class="flex flex-wrap gap-3">
 			<Button variant="primary">Primary</Button>
 			<Button variant="secondary">Secondary</Button>
@@ -22,6 +22,16 @@ import "../styles/global.css";
 			<Button size="md">Medium</Button>
 			<Button size="lg">Large</Button>
 			<Button disabled>Disabled</Button>
+		</div>
+		<div class="pt-10 flex gap-5">
+			<ProductCard title="Producto 1" price={100} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwceb8ff9f/products/NATPER-100090_2.jpg?sw=600&q=80" className="" />
+
+			<ProductCard title="Producto 2" price={250} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwd532df88/products/NATPER-163707_2.jpg?sw=600&q=80" className="" />
+
+			<ProductCard title="Producto 3" price={299} image="https://media.falabella.com/falabellaPE/80083228_1/w=1200,h=1200,fit=pad" className="" />
+
+			<ProductCard title="Producto 3" price={299} image="https://media.falabella.com/sodimacPE/4386094_01/w=1200,h=1200,fit=pad" className="" />
+
 		</div>
 	</body>
 </html>

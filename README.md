@@ -112,6 +112,58 @@ Sistema de temas configurable sin tocar lógica de negocio:
 
 ---
 
+## 🧩 Design System / Componentes UI
+
+Componentes reutilizables en `packages/ui`, organizados por nivel de abstracción.
+
+### Nivel 1 — Primitivos (base)
+
+Componentes sin lógica de negocio, base de toda la interfaz.
+
+| Componente | Estado | Descripción |
+|-----------|--------|-------------|
+| `Button` | ✅ Implementado | Variantes primary/secondary/danger, tamaños sm/md/lg, disabled |
+| `Input` | ⏳ Pendiente | Campo de texto con label, validación visual |
+| `Label` | ⏳ Pendiente | Etiqueta accesible para formularios |
+| `Card` | ⏳ Pendiente | Contenedor genérico con header/body/footer |
+| `Badge` | ⏳ Pendiente | Indicador visual de estado |
+
+### Nivel 2 — Layout
+
+Estructura y composición de páginas.
+
+| Componente | Estado | Descripción |
+|-----------|--------|-------------|
+| `Container` | ⏳ Pendiente | Centrado y ancho máximo |
+| `Section` | ⏳ Pendiente | Bloque semántico con spacing |
+| `Stack` | ⏳ Pendiente | Spacing vertical/horizontal |
+| `Grid` | ⏳ Pendiente | Grid responsive |
+
+### Nivel 3 — Ecommerce
+
+Componentes específicos del dominio.
+
+| Componente | Estado | Descripción |
+|-----------|--------|-------------|
+| `ProductCard` | ✅ Implementado | Tarjeta de producto con imagen, título y precio |
+| `ProductGrid` | ⏳ Pendiente | Grid de productos responsive |
+| `Price` | ⏳ Pendiente | Formateo de precio con moneda |
+| `AddToCartButton` | ⏳ Pendiente | Botón con lógica de carrito |
+| `QuantitySelector` | ⏳ Pendiente | Selector de cantidad |
+
+### Nivel 4 — Navegación
+
+Componentes de navegación compartidos.
+
+| Componente | Estado | Descripción |
+|-----------|--------|-------------|
+| `Navbar` | ⏳ Pendiente | Barra de navegación |
+| `Footer` | ⏳ Pendiente | Pie de página |
+| `Breadcrumbs` | ⏳ Pendiente | Migas de pan |
+| `Sidebar` | ⏳ Pendiente | Barra lateral (admin) |
+
+---
+
 ## 🧠 Agentes IA
 
 - Arquitectura

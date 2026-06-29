@@ -167,19 +167,31 @@ Queda fuera del MVP:
 ### 0.2. Elegir stack
 
   ### Frontend
-    - Astro
+  ---
+
+  #### apps/web
+    - Astro (routing, SSR y páginas)
+    - React (componentes interactivos)
+
+  #### apps/admin
     - React
 
-  ### Estilos
+  #### UI
+    - packages/ui implementado íntegramente en React.
+    - Todos los componentes reutilizables estarán desarrollados en React.
+    - Astro consumirá dichos componentes mediante la integración oficial.
+
+  #### Estilos
     - Tailwind CSS
 
-  ### ORM
+  ### Backend
+  ---
+
+  #### ORM
     - Drizzle
 
-  ### Base de datos
-    - PostgreSQL/SQLite
-
-  ** Definir convenciones y estructura del repositorio.**
+  #### Base de datos
+    - PostgreSQL / SQLite
 
 ---
 

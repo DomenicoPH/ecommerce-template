@@ -1,0 +1,160 @@
+---
+import { Container, Section, Stack, Grid, Button, ProductCard, Input, Label, Card, CardHeader, CardBody, CardFooter, Badge } from "@ecommerce/ui";
+import "../styles/global.css";
+---
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Preview - UI Components</title>
+	</head>
+	<body class="bg-gray-50">
+		<Container maxWidth="xl" className="py-12">
+			<h1 class="text-3xl font-bold text-center mb-12">UI Components Preview</h1>
+
+			<Section padding="lg" className="bg-white rounded-lg mb-8 px-20 border border-gray-200">
+				<h2 class="text-2xl font-semibold mb-6">Nivel 1 — Primitivos</h2>
+				
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Buttons</h3>
+					<Stack direction="row" spacing="sm" align="center">
+						<Button variant="primary">Primary</Button>
+						<Button variant="secondary">Secondary</Button>
+						<Button variant="danger">Danger</Button>
+						<Button size="sm">Small</Button>
+						<Button size="lg">Large</Button>
+						<Button disabled>Disabled</Button>
+					</Stack>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Inputs</h3>
+					<Stack direction="column" spacing="md" className="w-60">
+						<Input label="Nombre" placeholder="Ingresa tu nombre" />
+						<Input label="Email" type="email" placeholder="tucorreo@dominio.com" />
+						<Input label="Contraseña" type="password" error="La contraseña es obligatoria" />
+						<Input label="Buscar" leftIcon="🔍" placeholder="Buscar producto..." />
+					</Stack>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Labels</h3>
+					<Stack direction="column" spacing="sm">
+						<Label>Nombre</Label>
+						<Label required>Email</Label>
+						<Label className="text-blue-600">Personalizado</Label>
+					</Stack>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Cards</h3>
+					<Stack direction="row" spacing="md">
+						<Card variant="bordered" padding="md">
+							<CardHeader>
+								<h4 class="font-semibold">Card Header</h4>
+							</CardHeader>
+							<CardBody>
+								<p class="text-sm text-gray-600">Contenido del body.</p>
+							</CardBody>
+						</Card>
+						<Card variant="bordered" padding="md">
+							<CardBody>
+								<p class="text-sm text-gray-700">Card con footer</p>
+							</CardBody>
+							<CardFooter>
+								<Button size="sm" variant="primary">Acción</Button>
+							</CardFooter>
+						</Card>
+					</Stack>
+				</div>
+
+				<div>
+					<h3 class="text-lg font-medium mb-3">Badges</h3>
+					<Stack direction="row" spacing="sm" align="center">
+						<Badge>Default</Badge>
+						<Badge variant="success">Success</Badge>
+						<Badge variant="warning">Warning</Badge>
+						<Badge variant="danger">Danger</Badge>
+						<Badge variant="info">Info</Badge>
+						<Badge size="sm">Small</Badge>
+					</Stack>
+				</div>
+			</Section>
+
+			<Section padding="lg" className="bg-white rounded-lg mb-8 px-20 border border-gray-200">
+				<h2 class="text-2xl font-semibold mb-6">Nivel 2 — Layout</h2>
+				
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Container</h3>
+					<Container maxWidth="md" className="border-2 border-dashed border-gray-300 rounded-lg p-4">
+						<p class="text-sm text-gray-600">Container con max-width "md".</p>
+					</Container>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Section</h3>
+					<Section padding="lg" className="bg-gray-50 rounded-lg">
+						<p class="text-sm text-gray-600">Section con padding "lg" y fondo gris.</p>
+					</Section>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Stack (columna)</h3>
+					<Stack direction="column" spacing="md">
+						<div class="p-3 bg-blue-100 rounded">Item 1</div>
+						<div class="p-3 bg-blue-200 rounded">Item 2</div>
+						<div class="p-3 bg-blue-300 rounded">Item 3</div>
+					</Stack>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Stack (fila, centrado)</h3>
+					<Stack direction="row" spacing="lg" align="center" justify="center">
+						<div class="px-12 py-4 bg-green-100 rounded">A</div>
+						<div class="px-12 py-4 bg-green-200 rounded">B</div>
+						<div class="px-12 py-4 bg-green-300 rounded">C</div>
+					</Stack>
+				</div>
+
+				<div class="mb-16">
+					<h3 class="text-lg font-medium mb-3">Grid (3 columnas)</h3>
+					<Grid cols={3} gap="md">
+						<div class="p-4 bg-yellow-100 rounded text-center">1</div>
+						<div class="p-4 bg-yellow-200 rounded text-center">2</div>
+						<div class="p-4 bg-yellow-300 rounded text-center">3</div>
+						<div class="p-4 bg-yellow-100 rounded text-center">4</div>
+						<div class="p-4 bg-yellow-200 rounded text-center">5</div>
+						<div class="p-4 bg-yellow-300 rounded text-center">6</div>
+					</Grid>
+				</div>
+
+				<div class="mb-8">
+					<h3 class="text-lg font-medium mb-3">Grid responsive (cols="1", responsive: sm="2", md="3", lg="4")</h3>
+					<Grid cols={1} responsive={{ sm: 2, md: 3, lg: 4 }} gap="lg">
+						<div class="p-4 bg-purple-100 rounded text-center">Item 1</div>
+						<div class="p-4 bg-purple-200 rounded text-center">Item 2</div>
+						<div class="p-4 bg-purple-300 rounded text-center">Item 3</div>
+						<div class="p-4 bg-purple-100 rounded text-center">Item 4</div>
+						<div class="p-4 bg-purple-200 rounded text-center">Item 5</div>
+						<div class="p-4 bg-purple-300 rounded text-center">Item 6</div>
+					</Grid>
+				</div>
+			</Section>
+
+			<Section padding="lg" className="bg-white rounded-lg mb-8 px-20 border border-gray-200">
+				<h2 class="text-2xl font-semibold mb-6">Nivel 3 — Ecommerce</h2>
+
+				<h3 class="text-lg font-medium mb-3">ProductCard on Grid</h3>
+				<Grid cols={5} gap="md">
+					<ProductCard title="Producto 1" price={100} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwceb8ff9f/products/NATPER-100090_2.jpg?sw=600&q=80" />
+					<ProductCard title="Producto 2" price={250} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwd532df88/products/NATPER-163707_2.jpg?sw=600&q=80" />
+					<ProductCard title="Producto 3" price={299} image="https://media.falabella.com/falabellaPE/80083228_1/w=1200,h=1200,fit=pad" />
+					<ProductCard title="Producto 4" price={199} image="https://media.falabella.com/sodimacPE/4386094_01/w=1200,h=1200,fit=pad" />
+					<ProductCard title="Producto 5" price={145} image="https://img.kwcdn.com/product/fancy/cd4b5508-4567-402a-9967-1e37ca070c02.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" />
+				</Grid>
+
+			</Section>
+		</Container>
+	</body>
+</html>

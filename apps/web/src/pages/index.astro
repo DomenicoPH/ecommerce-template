@@ -1,5 +1,4 @@
 ---
-import { Button, ProductCard, Input, Label, Badge, Card, CardHeader, CardBody, CardFooter, Container, Section, Stack, Grid } from "@ecommerce/ui";
 import "../styles/global.css";
 ---
 
@@ -8,160 +7,16 @@ import "../styles/global.css";
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ecommerce Template</title>
 	</head>
-	<body class="p-8">
-		<h1 class="text-2xl font-bold mb-6">Ecommerce Template</h1>
-
-		<div class="flex flex-wrap gap-3">
-			<Button variant="primary">Primary</Button>
-			<Button variant="secondary">Secondary</Button>
-			<Button variant="danger">Danger</Button>
-			<Button size="sm">Small</Button>
-			<Button size="md">Medium</Button>
-			<Button size="lg">Large</Button>
-			<Button disabled>Disabled</Button>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Productos</h2>
-			<div class="flex flex-wrap gap-5">
-				<ProductCard title="Producto 1" price={100} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwceb8ff9f/products/NATPER-100090_2.jpg?sw=600&q=80" />
-				<ProductCard title="Producto 2" price={250} image="https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwd532df88/products/NATPER-163707_2.jpg?sw=600&q=80" />
-				<ProductCard title="Producto 3" price={299} image="https://media.falabella.com/falabellaPE/80083228_1/w=1200,h=1200,fit=pad" />
-				<ProductCard title="Producto 4" price={199} image="https://media.falabella.com/sodimacPE/4386094_01/w=1200,h=1200,fit=pad" />
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Inputs</h2>
-			<div class="flex flex-col gap-4 w-96">
-				<Input label="Nombre" placeholder="Ingresa tu nombre" />
-				<Input label="Email" type="email" placeholder="tucorreo@dominio.com" />
-				<Input label="Contraseña" type="password" error="La contraseña es obligatoria" />
-				<Input placeholder="Sin label" disabled />
-				<Input label="Buscar" leftIcon="🔍" placeholder="Buscar producto..." />
-				<Input label="Cantidad" type="number" defaultValue={1} min={1} max={10} />
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Labels</h2>
-			<div class="flex flex-col gap-3 w-96">
-				<Label>Nombre</Label>
-				<Label required>Email</Label>
-				<Label className="text-blue-600">Personalizado</Label>
-				<div class="flex items-center gap-2">
-					<Label required>Email</Label>
-					<Input />
-				</div>
-				<div class="flex items-center gap-2">
-					<Label className="text-blue-600">Personalizado</Label>
-					<Input />
-				</div>
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Cards</h2>
-			<div class="flex flex-wrap gap-4">
-				<Card padding="sm" className="bg-sky-100">
-					<CardHeader>
-						<h3 class="text-lg font-semibold">Card con header</h3>
-					</CardHeader>
-					<CardBody>
-						<p class="text-sm text-gray-600">Contenido del cuerpo.</p>
-					</CardBody>
-				</Card>
-				<Card variant="bordered" padding="lg">
-					<CardBody>
-						<p class="text-sm text-gray-700">Card bordered con padding grande.</p>
-					</CardBody>
-					<CardFooter>
-						<div class="flex gap-2">
-							<Button size="sm" variant="primary">Confirmar</Button>
-							<Button size="sm" variant="secondary">Cancelar</Button>
-						</div>
-					</CardFooter>
-				</Card>
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Badges</h2>
-			<div class="flex flex-wrap gap-2">
-				<Badge>Default</Badge>
-				<Badge variant="success">Success</Badge>
-				<Badge variant="warning">Warning</Badge>
-				<Badge variant="danger">Danger</Badge>
-				<Badge variant="info">Info</Badge>
-				<Badge size="sm">Small</Badge>
-				<Badge size="md">Medium</Badge>
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Container (Nivel 2 - Layout)</h2>
-			<Container maxWidth="md" className="border-2 border-dashed border-gray-300 rounded-lg p-4">
-				<p class="text-sm text-gray-600">Contenido dentro de un Container con max-width "md".</p>
-				<p class="text-sm text-gray-600">Este componente centra el contenido y limita el ancho máximo.</p>
-			</Container>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Section (Nivel 2 - Layout)</h2>
-			<Section padding="lg" className="bg-gray-50 rounded-lg">
-				<h3 class="text-lg font-semibold mb-2">Sección con padding "lg"</h3>
-				<p class="text-sm text-gray-600">Bloque semántico con espaciado grande. Útil para separar contenido por secciones.</p>
-			</Section>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Stack (Nivel 2 - Layout)</h2>
-			<div class="flex flex-col gap-4 mb-4">
-				<p class="text-sm font-medium">Columna (direction="column")</p>
-				<Stack direction="column" spacing="md">
-					<div class="p-3 bg-blue-100 rounded">Item 1</div>
-					<div class="p-3 bg-blue-200 rounded">Item 2</div>
-					<div class="p-3 bg-blue-300 rounded">Item 3</div>
-				</Stack>
-			</div>
-			<div class="flex flex-col gap-4">
-				<p class="text-sm font-medium">Fila (direction="row", spacing="lg", align="center", justify="center")</p>
-				<Stack direction="row" spacing="lg" align="center" justify="center">
-					<div class="p-3 bg-green-100 rounded">A</div>
-					<div class="p-3 bg-green-200 rounded">B</div>
-					<div class="p-3 bg-green-300 rounded">C</div>
-				</Stack>
-			</div>
-		</div>
-
-		<div class="pt-10">
-			<h2 class="text-xl font-semibold mb-3">Grid (Nivel 2 - Layout)</h2>
-			<div class="mb-4">
-				<p class="text-sm font-medium mb-2">Grid base (cols="3", gap="md")</p>
-				<Grid cols={3} gap="md">
-					<div class="p-4 bg-yellow-100 rounded text-center">Col 1</div>
-					<div class="p-4 bg-yellow-200 rounded text-center">Col 2</div>
-					<div class="p-4 bg-yellow-300 rounded text-center">Col 3</div>
-					<div class="p-4 bg-yellow-100 rounded text-center">Col 4</div>
-					<div class="p-4 bg-yellow-200 rounded text-center">Col 5</div>
-					<div class="p-4 bg-yellow-300 rounded text-center">Col 6</div>
-				</Grid>
-			</div>
-			<div>
-				<p class="text-sm font-medium mb-2">Grid responsive (cols="1", responsive: sm="2", md="3", lg="4")</p>
-				<Grid cols={1} responsive={{ sm: 2, md: 3, lg: 4 }} gap="lg">
-					<div class="p-4 bg-purple-100 rounded text-center">Item 1</div>
-					<div class="p-4 bg-purple-200 rounded text-center">Item 2</div>
-					<div class="p-4 bg-purple-300 rounded text-center">Item 3</div>
-					<div class="p-4 bg-purple-100 rounded text-center">Item 4</div>
-					<div class="p-4 bg-purple-200 rounded text-center">Item 5</div>
-					<div class="p-4 bg-purple-300 rounded text-center">Item 6</div>
-				</Grid>
-			</div>
-		</div>
+	<body class="flex flex-col items-center justify-center min-h-screen">
+		<h1 class="text-4xl font-bold mb-6">E-Commo</h1>
+		<a
+			href="/preview"
+			class="rounded font-medium transition-colors bg-blue-600 text-white hover:bg-blue-700 px-4 py-2 text-base"
+		>
+			Ver muestras
+		</a>
 	</body>
 </html>

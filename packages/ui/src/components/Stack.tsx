@@ -34,6 +34,11 @@ const justifyClasses: Record<NonNullable<StackProps["justify"]>, string> = {
   stretch: "justify-stretch"
 };
 
+const directionClasses: Record<NonNullable<StackProps["direction"]>, string> = {
+  row: "flex-row",
+  column: "flex-col"
+};
+
 export function Stack({
   direction = "column",
   spacing = "md",
@@ -45,7 +50,7 @@ export function Stack({
 }: StackProps) {
   return (
     <div
-      className={`flex flex-${direction} ${spacingClasses[spacing]} ${alignClasses[align]} ${justifyClasses[justify]} ${className}`}
+      className={`flex ${directionClasses[direction]} ${spacingClasses[spacing]} ${alignClasses[align]} ${justifyClasses[justify]} ${className}`}
       {...props}
     >
       {children}

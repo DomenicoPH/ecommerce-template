@@ -123,10 +123,10 @@ Componentes sin lógica de negocio, base de toda la interfaz.
 | Componente | Estado | Descripción |
 |-----------|--------|-------------|
 | `Button` | ✅ Implementado | Variantes primary/secondary/danger, tamaños sm/md/lg, disabled |
-| `Input` | ⏳ Pendiente | Campo de texto con label, validación visual |
-| `Label` | ⏳ Pendiente | Etiqueta accesible para formularios |
-| `Card` | ⏳ Pendiente | Contenedor genérico con header/body/footer |
-| `Badge` | ⏳ Pendiente | Indicador visual de estado |
+| `Input` | ✅ Implementado | Campo de texto con label, validación visual |
+| `Label` | ✅ Implementado | Etiqueta accesible para formularios |
+| `Card` | ✅ Implementado | Contenedor genérico con header/body/footer |
+| `Badge` | ✅ Implementado | Indicador visual de estado |
 
 ### Nivel 2 — Layout
 
@@ -134,10 +134,10 @@ Estructura y composición de páginas.
 
 | Componente | Estado | Descripción |
 |-----------|--------|-------------|
-| `Container` | ⏳ Pendiente | Centrado y ancho máximo |
-| `Section` | ⏳ Pendiente | Bloque semántico con spacing |
-| `Stack` | ⏳ Pendiente | Spacing vertical/horizontal |
-| `Grid` | ⏳ Pendiente | Grid responsive |
+| `Container` | ✅ Implementado | Centrado y ancho máximo |
+| `Section` | ✅ Implementado | Bloque semántico con spacing |
+| `Stack` | ✅ Implementado | Spacing vertical/horizontal |
+| `Grid` | ✅ Implementado | Grid responsive |
 
 ### Nivel 3 — Ecommerce
 

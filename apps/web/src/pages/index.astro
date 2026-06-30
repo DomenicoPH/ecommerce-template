@@ -1,5 +1,5 @@
 ---
-import { Button, ProductCard, Input, Label, Badge, Card, CardHeader, CardBody, CardFooter } from "@ecommerce/ui";
+import { Button, ProductCard, Input, Label, Badge, Card, CardHeader, CardBody, CardFooter, Container, Section, Stack, Grid } from "@ecommerce/ui";
 import "../styles/global.css";
 ---
 
@@ -99,6 +99,68 @@ import "../styles/global.css";
 				<Badge variant="info">Info</Badge>
 				<Badge size="sm">Small</Badge>
 				<Badge size="md">Medium</Badge>
+			</div>
+		</div>
+
+		<div class="pt-10">
+			<h2 class="text-xl font-semibold mb-3">Container (Nivel 2 - Layout)</h2>
+			<Container maxWidth="md" className="border-2 border-dashed border-gray-300 rounded-lg p-4">
+				<p class="text-sm text-gray-600">Contenido dentro de un Container con max-width "md".</p>
+				<p class="text-sm text-gray-600">Este componente centra el contenido y limita el ancho máximo.</p>
+			</Container>
+		</div>
+
+		<div class="pt-10">
+			<h2 class="text-xl font-semibold mb-3">Section (Nivel 2 - Layout)</h2>
+			<Section padding="lg" className="bg-gray-50 rounded-lg">
+				<h3 class="text-lg font-semibold mb-2">Sección con padding "lg"</h3>
+				<p class="text-sm text-gray-600">Bloque semántico con espaciado grande. Útil para separar contenido por secciones.</p>
+			</Section>
+		</div>
+
+		<div class="pt-10">
+			<h2 class="text-xl font-semibold mb-3">Stack (Nivel 2 - Layout)</h2>
+			<div class="flex flex-col gap-4 mb-4">
+				<p class="text-sm font-medium">Columna (direction="column")</p>
+				<Stack direction="column" spacing="md">
+					<div class="p-3 bg-blue-100 rounded">Item 1</div>
+					<div class="p-3 bg-blue-200 rounded">Item 2</div>
+					<div class="p-3 bg-blue-300 rounded">Item 3</div>
+				</Stack>
+			</div>
+			<div class="flex flex-col gap-4">
+				<p class="text-sm font-medium">Fila (direction="row", spacing="lg", align="center", justify="center")</p>
+				<Stack direction="row" spacing="lg" align="center" justify="center">
+					<div class="p-3 bg-green-100 rounded">A</div>
+					<div class="p-3 bg-green-200 rounded">B</div>
+					<div class="p-3 bg-green-300 rounded">C</div>
+				</Stack>
+			</div>
+		</div>
+
+		<div class="pt-10">
+			<h2 class="text-xl font-semibold mb-3">Grid (Nivel 2 - Layout)</h2>
+			<div class="mb-4">
+				<p class="text-sm font-medium mb-2">Grid base (cols="3", gap="md")</p>
+				<Grid cols={3} gap="md">
+					<div class="p-4 bg-yellow-100 rounded text-center">Col 1</div>
+					<div class="p-4 bg-yellow-200 rounded text-center">Col 2</div>
+					<div class="p-4 bg-yellow-300 rounded text-center">Col 3</div>
+					<div class="p-4 bg-yellow-100 rounded text-center">Col 4</div>
+					<div class="p-4 bg-yellow-200 rounded text-center">Col 5</div>
+					<div class="p-4 bg-yellow-300 rounded text-center">Col 6</div>
+				</Grid>
+			</div>
+			<div>
+				<p class="text-sm font-medium mb-2">Grid responsive (cols="1", responsive: sm="2", md="3", lg="4")</p>
+				<Grid cols={1} responsive={{ sm: 2, md: 3, lg: 4 }} gap="lg">
+					<div class="p-4 bg-purple-100 rounded text-center">Item 1</div>
+					<div class="p-4 bg-purple-200 rounded text-center">Item 2</div>
+					<div class="p-4 bg-purple-300 rounded text-center">Item 3</div>
+					<div class="p-4 bg-purple-100 rounded text-center">Item 4</div>
+					<div class="p-4 bg-purple-200 rounded text-center">Item 5</div>
+					<div class="p-4 bg-purple-300 rounded text-center">Item 6</div>
+				</Grid>
 			</div>
 		</div>
 	</body>

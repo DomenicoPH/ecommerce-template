@@ -20,3 +20,9 @@
     "jsxImportSource": "react"
   }
 }
+
+// App principal Astro que consume la librería UI
+// Estrategia: "framework app" (integra componentes React en Astro)
+// - Extiende strict de Astro (modo estricto para la app)
+// - jsx: "react-jsx" → transforma JSX para usarlo en Astro
+// - paths → alias para importar @ecommerce/ui sin rutas relativas

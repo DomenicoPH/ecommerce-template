@@ -1,5 +1,6 @@
 export { default as Button } from "./components/Button";
 export { default as ProductCard } from "./components/ProductCard";
+export { default as ProductGrid, type Product, type ProductGridProps } from "./components/ProductGrid";
 export { Input, type InputProps } from "./components/Input";
 export { Label, type LabelProps } from "./components/Label";
 export { Card, CardHeader, CardBody, CardFooter, type CardProps } from "./components/Card";

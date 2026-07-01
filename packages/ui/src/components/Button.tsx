@@ -18,7 +18,7 @@ const sizeClasses: Record<NonNullable<ButtonProps["size"]>, string> = {
   lg: "px-6 py-3 text-lg"
 };
 
-function Button({
+export function Button({
   variant = "primary",
   size = "md",
   className = "",
@@ -34,5 +34,3 @@ function Button({
     </button>
   );
 }
-
-export default Button;

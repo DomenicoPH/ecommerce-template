@@ -148,7 +148,7 @@ Componentes específicos del dominio.
 | `ProductCard` | ✅ Implementado | Tarjeta de producto con imagen, título y precio |
 | `ProductGrid` | ✅ Implementado | Grid de productos responsive |
 | `Price` | ✅ Implementado | Formateo de precio con moneda |
-| `AddToCartButton` | ⏳ Pendiente | Botón con lógica de carrito |
+| `AddToCartButton` | ✅ Implementado | Botón con lógica de carrito |
 | `QuantitySelector` | ⏳ Pendiente | Selector de cantidad |
 
 ### Nivel 4 — Navegación

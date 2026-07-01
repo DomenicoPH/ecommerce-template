@@ -1,11 +1,12 @@
-export { default as Button } from "./components/Button";
-export { default as ProductCard } from "./components/ProductCard";
-export { default as ProductGrid, type Product, type ProductGridProps } from "./components/ProductGrid";
+export { Button } from "./components/Button";
+export { ProductCard } from "./components/ProductCard";
+export { ProductGrid, type Product, type ProductGridProps } from "./components/ProductGrid";
 export { Input, type InputProps } from "./components/Input";
 export { Label, type LabelProps } from "./components/Label";
 export { Card, CardHeader, CardBody, CardFooter, type CardProps } from "./components/Card";
 export { Badge, type BadgeProps } from "./components/Badge";
 export { Price, type PriceProps } from "./components/Price";
+export { AddToCartButton, type AddToCartButtonProps } from "./components/AddToCartButton";
 export { Container, type ContainerProps } from "./components/Container";
 export { Section, type SectionProps } from "./components/Section";
 export { Stack, type StackProps } from "./components/Stack";

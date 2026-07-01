@@ -1,4 +1,4 @@
-import ProductCard from "./ProductCard";
+import { ProductCard } from "./ProductCard";
 import { Grid, GridProps } from "./Grid";
 
 export interface Product {
@@ -17,7 +17,7 @@ export interface ProductGridProps {
   className?: string;
 }
 
-export default function ProductGrid({
+export function ProductGrid({
   products,
   cols = 3,
   responsive,

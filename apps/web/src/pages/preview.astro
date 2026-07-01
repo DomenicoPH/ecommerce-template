@@ -1,5 +1,5 @@
 ---
-import { Container, Section, Stack, Grid, Button, ProductCard, ProductGrid, Price, Input, Label, Card, CardHeader, CardBody, CardFooter, Badge } from "@ecommerce/ui";
+import { Container, Section, Stack, Grid, Button, ProductCard, ProductGrid, Price, AddToCartButton, Input, Label, Card, CardHeader, CardBody, CardFooter, Badge } from "@ecommerce/ui";
 import "../styles/global.css";
 ---
 
@@ -182,6 +182,20 @@ import "../styles/global.css";
 					<Price value={2500.5} currency="USD" size="md" />
 					<Price value={150} currency="EUR" locale="de-DE" size="lg" />
 					<Price value={899.99} currency="ARS" locale="es-AR" size="md" />
+				</Stack>
+
+				<h3 class="text-lg font-medium mb-3 mt-8">AddToCartButton</h3>
+				<Stack direction="row" spacing="md" align="center">
+					<AddToCartButton
+						product={{ id: 1, title: "Producto Demo", price: 100 }}
+						quantity={1}
+						onAdd={(product, quantity) => console.log("Agregar al carrito:", product, quantity)}
+					/>
+					<AddToCartButton
+						product={{ id: 2, title: "Producto Demo 2", price: 200 }}
+						quantity={2}
+						disabled
+					/>
 				</Stack>
 			</Section>
 		</Container>

@@ -1,3 +1,5 @@
+import { Price } from "./Price";
+
 interface ProductCardProps {
   title: string;
   price: number;
@@ -16,7 +18,7 @@ export default function ProductCard({ title, price, image, className }: ProductC
         />
       )}
       <h3 className="text-lg font-semibold">{title}</h3>
-      <p className="text-gray-600">${price}</p>
+      <Price value={price} />
     </div>
   );
 }

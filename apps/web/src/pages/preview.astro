@@ -1,5 +1,5 @@
 ---
-import { Container, Section, Stack, Grid, Button, ProductCard, ProductGrid, Input, Label, Card, CardHeader, CardBody, CardFooter, Badge } from "@ecommerce/ui";
+import { Container, Section, Stack, Grid, Button, ProductCard, ProductGrid, Price, Input, Label, Card, CardHeader, CardBody, CardFooter, Badge } from "@ecommerce/ui";
 import "../styles/global.css";
 ---
 
@@ -170,11 +170,19 @@ import "../styles/global.css";
 						{ id: 2, title: "Producto 2", price: 250, image: "https://production.na01.natura.com/dw/image/v2/BFKR_PRD/on/demandware.static/-/Sites-natura-pe-storefront-catalog/default/dwd532df88/products/NATPER-163707_2.jpg?sw=600&q=80" },
 						{ id: 3, title: "Producto 3", price: 299, image: "https://media.falabella.com/falabellaPE/80083228_1/w=1200,h=1200,fit=pad" },
 						{ id: 4, title: "Producto 4", price: 199, image: "https://media.falabella.com/sodimacPE/4386094_01/w=1200,h=1200,fit=pad" },
-						{ id: 5, title: "Producto 5", price: 145, image: "https://img.kwcdn.com/product/fancy/cd4b5508-4567-402a-9967-1e37ca070c02.jpg?imageMogr2/auto-orient%7CimageView2/2/w=800/q/70/format/webp" }
+						{ id: 5, title: "Producto 5", price: 145, image: "https://img.kwcdn.com/product/fancy/cd4b5508-4567-402a-9967-1e37ca070c02.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" }
 					]}
 					cols={3}
 					gap="md"
 				/>
+
+				<h3 class="text-lg font-medium mb-3 mt-8">Price</h3>
+				<Stack direction="row" spacing="md" align="center">
+					<Price value={1000} currency="USD" size="sm" />
+					<Price value={2500.5} currency="USD" size="md" />
+					<Price value={150} currency="EUR" locale="de-DE" size="lg" />
+					<Price value={899.99} currency="ARS" locale="es-AR" size="md" />
+				</Stack>
 			</Section>
 		</Container>
 	</body>

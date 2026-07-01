@@ -1,5 +1,11 @@
 {
   "tailwindCSS.lint.unknownAtRules": "ignore",
+  "tailwindCSS.includeLanguages": {
+    "css": "css"
+  },
+  "tailwindCSS.files.exclude": ["**/node_modules/**"],
+  "css.validate": true,
+  "css.lint.unknownAtRules": "ignore",
   "js/ts.tsdk.path": "node_modules/typescript/lib",
   "js/ts.tsdk.promptToUseWorkspaceVersion": true
 }
